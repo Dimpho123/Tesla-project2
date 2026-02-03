@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.logo {
+  letter-spacing: 3px;
+}
+
+/* Hero Sections */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content p {
+  margin: 10px 0 25px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+/* Background Images */
+.model-s {
+  background-image: url("images/Homepage-Card-Model-S-Desktop-US-v3.avif");
+}
+
+.model-3 {
+  background-image: url("images/Homepage-Promo-Meet-Model-Y-Desktop.avif");
+}
+
+.model-x {
+  background-image: url("/images/Model-X-Hero-Desktop-US.avif");
+}
+
+.model-y{
+  background-image: url("images/Model-Y-Standard-Hero-Desktop-EMEA.avif");
+}
+
+/* Footer */
+.footer {
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+/* Landing Page */
+.landing {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+  background-image: url("images/Homepage-Promo-Model-3-Desktop-US-CA-MX.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-content h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.landing-content p {
+  font-size: 20px;
+  color: burlywood;
+}
+/* Landing Buttons */
+.landing-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.landing-buttons .btn {
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Reuse existing button styles */
+.btn.dark {
+  background-color: rgba(23, 26, 32, 0.8);
+  color: black;
+}
+
+.btn.light {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+}
+
